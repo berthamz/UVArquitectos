@@ -1,0 +1,35 @@
+/*
+Theme Name: UVArquitectos
+Author: Bertha Mireles
+Description: Stylesheet for Colossus website
+Version: 1.0.0
+Date: Julio 2017
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Quicksand:400,500,700);
+
+
+// VARIABLES //
+$font: 'Quicksand', sans-serif;
+
+$txt-s: 12px;
+$txt-r: 16px;
+$txt-ml: 18px;
+$txt-l: 22px;
+$txt-xl: 30px;
+
+$black: #000;
+$white: #fff;
+$blue: #4343fe;
+$grey: #191919;
+$grey-dark: #404040;
+$grey-light: #fbfafa;
+
+
+// MIXINS //
+
+@mixin breakpoint($point, $value: 0) {
+	@if $point == desktop {
+		@media (min-width: 768px) { @content; }
+	}
+}
