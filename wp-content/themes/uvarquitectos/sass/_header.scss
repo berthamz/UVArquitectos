@@ -1,0 +1,6 @@
+header {
+	@extend section;
+
+	@include breakpoint(desktop) {
+	}
+}

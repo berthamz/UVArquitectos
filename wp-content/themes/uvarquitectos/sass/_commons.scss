@@ -1,0 +1,9 @@
+body {
+	font-family: $font;
+}
+
+section {
+	margin: 0 auto;
+	width: calc(100% - 20px);
+	max-width: 950px;
+}
