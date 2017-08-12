@@ -9,4 +9,7 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . /uvarquitectos/site/index.php [L]
 </IfModule>
 
+AddType image/svg+xml svg
+AddType image/svg+xml svgz
+
 # END WordPress

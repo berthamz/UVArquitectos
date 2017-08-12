@@ -1,0 +1,112 @@
+// Menú de filtros
+
+.st_sf_port_filter_holder {
+	height: 40px;
+	margin-top: 10px;
+}
+
+.st_sf_port_filter {
+	position: relative;
+	background: $grey-lighter;
+
+	@include breakpoint(desktop) {
+		width: 200px;
+		float: right;
+	}
+}
+
+.filter-dropdown-menu {
+	display: inline-block;
+
+	&:after {
+		content: '';
+		display: inline-block;
+		width: 0;
+		height: 0;
+		float: right;
+		margin-top: 8px;
+		border: 7px solid transparent;
+		border-top-color: $grey-light;
+	}
+}
+
+.filter-dropdown-menu,
+.st_sf_list_cats {
+	line-height: 25px;
+	padding: 5px 10px;
+	color: $grey-light;
+	background: $grey-lighter;
+	width: 100%;
+	text-align: left;
+
+	@include breakpoint(desktop) {
+		width: 200px;
+	}
+}
+
+.st_sf_list_cats {
+	z-index: 1;
+	position: absolute;
+	display: none;
+
+	li {
+		display: block;
+	}
+
+	a {
+		display: block;
+		background: transparent;
+		text-decoration: none;
+	}
+}
+
+
+
+// Listado de proyectos
+
+.row {
+	margin: 0;
+}
+
+.st_sf_strange_portfolio_item .st_sf_vc_potrfolio {
+	height: 210px;
+	width: 100%;
+}
+
+.st_sf_strange_portfolio_item {
+	padding: 0;
+	@include breakpoint(desktop) {
+		padding: 0 8px;
+	}
+}
+
+.portfolio_link_button {
+	display: block;
+	text-decoration: none;
+
+	&:hover {
+		.st_sf_vc_potrfolio {
+			opacity: 0.5;
+		}
+
+		.st_sf_vc_port_cat {
+			font-style: italic;
+		}
+	}
+}
+
+.hover_overlay {
+	font-weight: 500;
+	line-height: 18px;
+	padding: 5px 0;
+}
+
+.st_sf_load_more_holder {
+	text-align: center;
+}
+
+#load_more_port_masorny_posts {
+	background: $grey-dark;
+	color: $white;
+	margin: 20px auto;
+}

@@ -74,19 +74,18 @@
 	}
 	?>
     <div class="st_sf_strange_portfolio_item st_sf_port_style_ii <?php echo esc_attr($col);?> <?php echo esc_attr($slugg)?>">
-        <div class="st_sf_vc_potrfolio" style="background:url('<?php echo esc_url($large_image_url[0]); ?>')">
-            <a data-id="<?php echo $post->ID?>" href="<?php the_permalink($post->ID)?>">
-            <div class="st_sf_vc_port_mask"  style="background:<?php echo get_post_meta($post->ID, 'port-bg', true); ?>">
-                <div class="text-center">
-                    <i class="fa fa-eye" style="color:<?php echo get_post_meta($post->ID, 'port-text-color', true); ?>"></i>
-                    <div class="hover_overlay">
-                        <h3 class="st_sf_sub_legend" style="color:<?php echo get_post_meta($post->ID, 'port-text-color', true); ?>"><?php the_title();?></h3>
-                        <div class="st_sf_vc_sep" style="background:<?php echo get_post_meta($post->ID, 'port-text-color', true); ?>"></div>
-                        <div class="st_sf_vc_port_cat" style="color:<?php echo get_post_meta($post->ID, 'port-text-color', true); ?>"><?php echo esc_attr(substr($slug, '0', '-2'));?></div>
-                    </div>
-                </div>
-            </div>
-            </a>
-        </div>
+        <a data-id="<?php echo $post->ID?>" href="<?php the_permalink($post->ID)?>" class="portfolio_link_button">
+	        <div class="st_sf_vc_potrfolio" style="background:url('<?php echo esc_url($large_image_url[0]); ?>')">
+	            <div class="st_sf_vc_port_mask"  style="background:<?php echo get_post_meta($post->ID, 'port-bg', true); ?>">
+	            </div>
+	        </div>
+
+	        <div class="hover_overlay">
+	            <h3 class="st_sf_sub_legend" style="color:<?php echo get_post_meta($post->ID, 'port-text-color', true); ?>"><?php the_title();?></h3>
+	            <div class="st_sf_vc_port_cat" style="color:<?php echo get_post_meta($post->ID, 'port-text-color', true); ?>"><?php echo esc_attr(substr($slug, '0', '-2'));?></div>
+	        </div>
+        </a>
+
+
     </div>
 <?php endwhile; endif; ?>

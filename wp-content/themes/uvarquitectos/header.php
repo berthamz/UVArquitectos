@@ -9,10 +9,12 @@
 <body <?php body_class(); ?>>
 <div id="wrapper" class="hfeed">
 <header id="header" role="banner">
-	<div class="uva-logo"><span>UV</span>Arquitectos</div>
+	<div class="uva-logo">
+		<a href="/"><img src="/uvarquitectos/site/wp-content/themes/uvarquitectos/images/uva-logo.svg" alt="UVA Logo"></a>
+	</div>
 	<nav id="menu" role="navigation">
 		<div class="mobile-menu">MENÚ</div>
 		<?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
 	</nav>
 </header>
-<div id="container">
+<div class="container">

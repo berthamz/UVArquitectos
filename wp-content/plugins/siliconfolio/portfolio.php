@@ -28,7 +28,7 @@
             <div class="filter-dropdown-menu">Filtrar</div>
             <ul class="st_sf_list_cats">
 				<?php $categories = get_categories(array('type' => 'portfolio', 'taxonomy' => 'portfolio-category')); 
-				echo "<li class='cat-item'><a href='#' data-filter='*' class='filter_button'>All Works</a></li>";
+				echo "<li class='cat-item'><a href='#' data-filter='*' class='filter_button'>Todos</a></li>";
 				foreach($categories as $category) {
 				$group = $category->slug;
 				echo "<li><a href='#' data-filter='.$group' class='filter_button filter-$group'>".$category->cat_name."</a></li>";
@@ -69,7 +69,7 @@
         <div class="st_sf_lmc_holder">
             <span>
                 <span class="st_sf_counts"><span id="st_sf_masorny_posts_per_page"><?php echo esc_attr(get_post_meta($post->ID, 'port-count', true)); ?></span> / <span id="st_sf_max_masorny_posts"><?php echo esc_attr($published_posts);?></span></span>
-                <a id="load_more_port_masorny_posts" data-tag="<?php echo get_post_meta($post->ID, 'st_sf_tag', 1)?>" data-offset="<?php echo esc_attr(get_post_meta($post->ID, 'port-count', true)); ?>" data-layout-mode="<?php echo esc_attr(get_post_meta($post->ID, 'port_layout', 1)) ?>" data-load-posts_count="<?php echo (get_post_meta($post->ID, 'port-load_count', true)); ?>"  class="st_sf_load_more"><span><?php _e("Load More ", "orangeidea");?></span></a>
+                <a id="load_more_port_masorny_posts" data-tag="<?php echo get_post_meta($post->ID, 'st_sf_tag', 1)?>" data-offset="<?php echo esc_attr(get_post_meta($post->ID, 'port-count', true)); ?>" data-layout-mode="<?php echo esc_attr(get_post_meta($post->ID, 'port_layout', 1)) ?>" data-load-posts_count="<?php echo (get_post_meta($post->ID, 'port-load_count', true)); ?>"  class="st_sf_load_more"><span><?php _e("Ver más ", "orangeidea");?></span></a>
             </span>
         </div>
         <?php };?>

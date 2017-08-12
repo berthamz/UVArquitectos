@@ -1,6 +1,83 @@
 header {
-	@extend section;
+	top: 0;
+	z-index: 1;
+	width: 100%;
+	max-width: none;
+	position: fixed;
+	padding: 15px 0 0;
+	text-align: center;
+	background: $white;
 
 	@include breakpoint(desktop) {
+		padding: 0;
+		max-width: calc(100% - 20px);
+		width: 950px;
+		margin: 35px auto 25px;
+		text-align: left;
+		position: initial;
+	}
+
+	img {
+		width: auto;
+		height: 60px;
+	}
+
+	.uva-logo {
+		@include breakpoint(desktop) {
+			display: inline-block;
+		}
+	}
+}
+
+#menu {
+	margin-top: 25px;
+
+	@include breakpoint(desktop) {
+		float: right;
+		margin-top: 5px;
+	}
+}
+
+.mobile-menu {
+	color: $black;
+	font-weight: 700;
+	font-size: $txt-r;
+	padding-bottom: 10px;
+
+	@include breakpoint(desktop) {
+		display: none;
+	}
+}
+
+.menu-main-menu-container {
+	display: none;
+	padding: 10px 0 20px;
+	border-top: 1px solid #eee;
+
+	@include breakpoint(desktop) {
+		border: 0;
+		padding: 0;
+		display: block;
+	}
+
+	li {
+		@include breakpoint(desktop) {
+			display: inline-block;
+			margin-left: 50px;
+		}
+	}
+
+	a {
+		color: $black;
+		font-weight: 700;
+		font-size: $txt-r;
+		text-decoration: none;
+		text-transform: uppercase;
+		line-height: 50px;
+		display: block;
+
+		&:hover {
+			font-style: italic;
+		}
 	}
 }
