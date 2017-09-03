@@ -97,7 +97,7 @@ jQuery.noConflict()(function($){
 						$('#load_more_port_masorny_posts').html(result.loading)
 						$('#load_more_port_masorny_posts').removeClass('do_not_hover');
 						if ( parseInt($('#st_sf_max_masorny_posts').html()) == $('.st_sf_strange_portfolio_item').length ){
-							$('#load_more_port_masorny_posts').html('<span style="">THE END</span>');
+							$('#load_more_port_masorny_posts').html('<span style="">NO HAY MÁS PROYECTOS</span>');
 							$('#load_more_port_masorny_posts').addClass('disabled');
 							  	var quotes = new Array('Stop','Do not Click','Nothing Here','Hey?','What?','Are you Crazy?', 'OMG', 'Unbelievable','Get Lost!'),
 								randno = quotes[Math.floor( Math.random() * quotes.length )];

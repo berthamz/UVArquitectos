@@ -1,0 +1,42 @@
+.servicios {
+	.btn-servicios {
+		font-style: italic;
+	}
+}
+
+.servicios-boxes {
+	@include breakpoint(desktop) {
+		display: flex;
+		flex-wrap: nowrap;
+		justify-content: space-between;
+	}
+
+	div {
+		flex-grow: 1;
+		padding: 18px;
+		text-align: justify;
+
+		&:first-of-type {
+			padding-left: 0;
+		}
+
+		&:last-of-type {
+			padding-right: 0;
+		}
+
+		p {
+			margin: 0;
+		}
+
+		h2 ~ p {
+			margin: 15px 0;
+		}
+
+		img {
+			display: block;
+			margin: 0 auto;
+			max-width: 100%;
+			height: auto;
+		}
+	}
+}

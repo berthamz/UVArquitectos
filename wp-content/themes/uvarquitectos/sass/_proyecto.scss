@@ -1,0 +1,40 @@
+.single-portfolio {
+	.btn-proyectos {
+		font-style: italic;
+	}
+}
+
+.nextend-thumbnail-scroller {
+	background: white !important;
+	justify-content: space-evenly;
+	flex-direction: row !important;
+
+	> .n2-ow {
+		margin: 10px 0 0 !important;
+	}
+}
+
+.nextend-thumbnail-inner,
+.nextend-thumbnail-scroller {
+	padding: 0 !important;
+	height: auto !important;
+	width: calc(100vw - 20px) !important;
+
+	@include breakpoint(desktop) {
+		max-width: 950px !important;
+	}
+}
+
+.oi_portfolio_page_holder {
+	padding: 20px 0;
+
+	p {
+		@include breakpoint(desktop) {
+			width: 75%;
+		}
+	}
+
+	.n2-ss-align {
+		margin-top: 40px;
+	}
+}

@@ -121,6 +121,25 @@ function uva_scripts() {
     wp_enqueue_script('mainjs');
 }
 
+/**
+ * add page slug to body class, if on a page
+ */
+ 
+function add_page_bodyclass($classes) {
+    if (is_page()) {
+        // get page slug
+        global $post;
+        $slug = get_post( $post )->post_name;
+ 
+        // add slug to $classes array
+        $classes[] = $slug;
+        // return the $classes array
+        return $classes;
+    } else { 
+        return $classes;
+    }
+}
+
 
 // Load stylesheets
 function uva_styles() {
@@ -138,3 +157,4 @@ add_action( 'template_redirect', 'redirect_to_specific_page' );
 
 // Add Filters
 add_filter('show_admin_bar', '__return_false');
+add_filter('body_class','add_page_bodyclass');

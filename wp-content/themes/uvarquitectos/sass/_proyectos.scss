@@ -1,3 +1,10 @@
+.proyectos {
+	.btn-proyectos {
+		font-style: italic;
+	}
+}
+
+
 // Menú de filtros
 
 .st_sf_port_filter_holder {
@@ -85,6 +92,8 @@
 	text-decoration: none;
 
 	&:hover {
+		text-decoration: none;
+
 		.st_sf_vc_potrfolio {
 			opacity: 0.5;
 		}
@@ -109,4 +118,29 @@
 	background: $grey-dark;
 	color: $white;
 	margin: 20px auto;
+}
+
+
+// Listado de proyectos por servicio
+
+.btn-ver-todos {
+	float: right;
+	padding: 10px;
+	font-size: 13px;
+	color: $grey-light;
+	text-transform: uppercase;
+	background: $grey-lighter;
+	margin-top: -30px;
+
+	&:hover {
+		background: $grey-light;
+		color: $grey-lighter;
+		text-decoration: none;
+	}
+}
+
+.page-template-portfolio.page-child {
+	h1 {
+		margin: 50px auto 20px;
+	}
 }

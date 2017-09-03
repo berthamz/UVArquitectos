@@ -1,0 +1,43 @@
+.contacto {
+	.btn-contacto {
+		font-style: italic;
+	}
+
+	p {
+
+		margin-left: 30px;
+
+		&:before {
+			content: '';
+			display: inline-block;
+			width: 15px;
+			height: 15px;
+			margin-left: -30px;
+			margin-right: 15px;
+			background-size: contain;
+			background-position: center;
+			background-repeat: no-repeat;
+		}
+
+		&:first-of-type:before {
+			background-image: url('../images/icon-location.svg');
+		}
+
+		&:nth-of-type(2):before {
+			background-image: url('../images/icon-phone.svg');
+		}
+
+		&:nth-of-type(3):before {
+			background-image: url('../images/icon-email-black.svg');
+		}
+	}
+
+	#wpgmza_map {
+		margin-top: 40px;
+		height: 300px !important;
+
+		@include breakpoint(desktop) {
+			height: 550px !important;
+		}
+	}
+}

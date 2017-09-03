@@ -1,22 +1,46 @@
 /*
 Theme Name: UVArquitectos
 Author: Bertha Mireles
-Description: Stylesheet for Colossus website
+Description: Stylesheet for UVArquitectos website
 Version: 1.0.0
 Date: Julio 2017
 */
 @import url(https://fonts.googleapis.com/css?family=Quicksand:400,500,700);
+html {
+  overflow: auto !important; }
+
 body {
   font-family: "Quicksand", sans-serif; }
 
+h1 {
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: underline; }
+
+h2 {
+  font-size: 16px;
+  margin-bottom: 3px;
+  text-decoration: underline; }
+
+h4 {
+  font-size: 12px; }
+
+p {
+  margin: 20px 0; }
+
+a {
+  text-decoration: none; }
+  a:hover {
+    text-decoration: underline; }
+
 .container, footer {
-  margin: 0 auto;
+  margin: 150px auto 0;
   max-width: calc(100% - 20px);
   width: 950px;
-  padding: 130px 0 0; }
+  padding: 0; }
   @media (min-width: 768px) {
     .container, footer {
-      padding-top: 0; } }
+      margin-top: 30px; } }
 
 header {
   top: 0;
@@ -26,13 +50,14 @@ header {
   position: fixed;
   padding: 15px 0 0;
   text-align: center;
-  background: #fff; }
+  background: #fff;
+  border-bottom: 1px solid #000; }
   @media (min-width: 768px) {
     header {
-      padding: 0;
+      padding: 0 0 25px;
       max-width: calc(100% - 20px);
       width: 950px;
-      margin: 35px auto 25px;
+      margin: 35px auto 0;
       text-align: left;
       position: initial; } }
   header img {
@@ -138,6 +163,35 @@ footer {
   .social-menu .email a {
     background-image: url("../images/icon-email.svg"); }
 
+.servicios .btn-servicios {
+  font-style: italic; }
+
+@media (min-width: 768px) {
+  .servicios-boxes {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between; } }
+.servicios-boxes div {
+  flex-grow: 1;
+  padding: 18px;
+  text-align: justify; }
+  .servicios-boxes div:first-of-type {
+    padding-left: 0; }
+  .servicios-boxes div:last-of-type {
+    padding-right: 0; }
+  .servicios-boxes div p {
+    margin: 0; }
+  .servicios-boxes div h2 ~ p {
+    margin: 15px 0; }
+  .servicios-boxes div img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto; }
+
+.proyectos .btn-proyectos {
+  font-style: italic; }
+
 .st_sf_port_filter_holder {
   height: 40px;
   margin-top: 10px; }
@@ -202,10 +256,12 @@ footer {
 .portfolio_link_button {
   display: block;
   text-decoration: none; }
-  .portfolio_link_button:hover .st_sf_vc_potrfolio {
-    opacity: 0.5; }
-  .portfolio_link_button:hover .st_sf_vc_port_cat {
-    font-style: italic; }
+  .portfolio_link_button:hover {
+    text-decoration: none; }
+    .portfolio_link_button:hover .st_sf_vc_potrfolio {
+      opacity: 0.5; }
+    .portfolio_link_button:hover .st_sf_vc_port_cat {
+      font-style: italic; }
 
 .hover_overlay {
   font-weight: 500;
@@ -219,5 +275,127 @@ footer {
   background: #404040;
   color: #fff;
   margin: 20px auto; }
+
+.btn-ver-todos {
+  float: right;
+  padding: 10px;
+  font-size: 13px;
+  color: #777;
+  text-transform: uppercase;
+  background: #fbfafa;
+  margin-top: -30px; }
+  .btn-ver-todos:hover {
+    background: #777;
+    color: #fbfafa;
+    text-decoration: none; }
+
+.page-template-portfolio.page-child h1 {
+  margin: 50px auto 20px; }
+
+.single-portfolio .btn-proyectos {
+  font-style: italic; }
+
+.nextend-thumbnail-scroller {
+  background: white !important;
+  justify-content: space-evenly;
+  flex-direction: row !important; }
+  .nextend-thumbnail-scroller > .n2-ow {
+    margin: 10px 0 0 !important; }
+
+.nextend-thumbnail-inner,
+.nextend-thumbnail-scroller {
+  padding: 0 !important;
+  height: auto !important;
+  width: calc(100vw - 20px) !important; }
+  @media (min-width: 768px) {
+    .nextend-thumbnail-inner,
+    .nextend-thumbnail-scroller {
+      max-width: 950px !important; } }
+
+.oi_portfolio_page_holder {
+  padding: 20px 0; }
+  @media (min-width: 768px) {
+    .oi_portfolio_page_holder p {
+      width: 75%; } }
+  .oi_portfolio_page_holder .n2-ss-align {
+    margin-top: 40px; }
+
+.nosotros .btn-nosotros {
+  font-style: italic; }
+.nosotros .size-post-thumbnail {
+  max-width: 100%;
+  height: auto; }
+.nosotros article {
+  min-height: 600px; }
+
+@media (min-width: 768px) {
+  .nosotros-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; } }
+
+.nosotros-img {
+  order: 1;
+  padding: 30px 0;
+  position: relative;
+  cursor: pointer; }
+  @media (min-width: 768px) {
+    .nosotros-img {
+      width: 23%; } }
+  .nosotros-img:after {
+    width: 0;
+    height: 0;
+    bottom: 0;
+    content: '';
+    position: absolute;
+    left: calc(50% - 10px);
+    border: 10px solid transparent; }
+  .nosotros-img:hover, .nosotros-img.nosotros-active {
+    font-weight: 500; }
+    .nosotros-img:hover:after, .nosotros-img.nosotros-active:after {
+      border-bottom-color: #404040; }
+  .nosotros-img:hover {
+    color: #777; }
+  .nosotros-img.nosotros-active {
+    font-weight: 500; }
+  .nosotros-img img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto; }
+
+.nosotros-txt {
+  order: 2;
+  display: none;
+  padding: 15px;
+  color: #fff;
+  background: #404040; }
+
+.contacto .btn-contacto {
+  font-style: italic; }
+.contacto p {
+  margin-left: 30px; }
+  .contacto p:before {
+    content: '';
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-left: -30px;
+    margin-right: 15px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat; }
+  .contacto p:first-of-type:before {
+    background-image: url("../images/icon-location.svg"); }
+  .contacto p:nth-of-type(2):before {
+    background-image: url("../images/icon-phone.svg"); }
+  .contacto p:nth-of-type(3):before {
+    background-image: url("../images/icon-email-black.svg"); }
+.contacto #wpgmza_map {
+  margin-top: 40px;
+  height: 300px !important; }
+  @media (min-width: 768px) {
+    .contacto #wpgmza_map {
+      height: 550px !important; } }
 
 /*# sourceMappingURL=main.css.map */

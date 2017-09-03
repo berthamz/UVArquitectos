@@ -11,5 +11,12 @@ jQuery(document).ready(function() {
 		jQuery('.st_sf_list_cats').fadeToggle(100);
 	});
 
+	// Nosotros info display
+	jQuery('.nosotros-img').click ( function () {
+		jQuery('.nosotros-img').removeClass('nosotros-active');
+		jQuery(this).addClass('nosotros-active');
+		jQuery('.nosotros-txt').hide();
+		jQuery(this).next().fadeIn(200);
+	});
 
 });
