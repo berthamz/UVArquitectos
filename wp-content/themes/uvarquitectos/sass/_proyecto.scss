@@ -36,5 +36,16 @@
 
 	.n2-ss-align {
 		margin-top: 40px;
+
+		~ P {
+			width: 100%;
+		}
 	}
+}
+
+.btn-ver-proyecto-link {
+	float: right;
+	color: $blue;
+	margin-top: 10px;
+	text-transform: uppercase;
 }

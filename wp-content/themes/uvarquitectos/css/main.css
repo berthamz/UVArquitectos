@@ -319,6 +319,14 @@ footer {
       width: 75%; } }
   .oi_portfolio_page_holder .n2-ss-align {
     margin-top: 40px; }
+    .oi_portfolio_page_holder .n2-ss-align ~ P {
+      width: 100%; }
+
+.btn-ver-proyecto-link {
+  float: right;
+  color: #4343fe;
+  margin-top: 10px;
+  text-transform: uppercase; }
 
 .nosotros .btn-nosotros {
   font-style: italic; }
