@@ -1,6 +1,6 @@
 .contacto {
-	.btn-contacto {
-		font-style: italic;
+	.btn-contacto a {
+		@extend .btn-selected;
 	}
 
 	p {

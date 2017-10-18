@@ -1,6 +1,6 @@
 .nosotros {
-	.btn-nosotros {
-		font-style: italic;
+	.btn-nosotros a {
+		@extend .btn-selected;
 	}
 
 	.size-post-thumbnail {

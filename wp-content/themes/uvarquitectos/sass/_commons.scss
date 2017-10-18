@@ -9,13 +9,11 @@ body {
 h1 {
 	font-size: 18px;
 	font-weight: 700;
-	text-decoration: underline;
 }
 
 h2 {
 	font-size: 16px;
 	margin-bottom: 3px;
-	text-decoration: underline;
 }
 
 h4 {
@@ -47,4 +45,9 @@ a {
 	@include breakpoint(desktop) {
 		margin-top: 30px;
 	}
+}
+
+.btn-selected {
+	color: $white;
+	background: $black;
 }

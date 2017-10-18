@@ -1,6 +1,6 @@
 .proyectos {
-	.btn-proyectos {
-		font-style: italic;
+	.btn-proyectos a {
+		@extend .btn-selected;
 	}
 }
 
@@ -96,10 +96,6 @@
 
 		.st_sf_vc_potrfolio {
 			opacity: 0.5;
-		}
-
-		.st_sf_vc_port_cat {
-			font-style: italic;
 		}
 	}
 }

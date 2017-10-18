@@ -14,13 +14,11 @@ body {
 
 h1 {
   font-size: 18px;
-  font-weight: 700;
-  text-decoration: underline; }
+  font-weight: 700; }
 
 h2 {
   font-size: 16px;
-  margin-bottom: 3px;
-  text-decoration: underline; }
+  margin-bottom: 3px; }
 
 h4 {
   font-size: 12px; }
@@ -41,6 +39,10 @@ a {
   @media (min-width: 768px) {
     .container, footer {
       margin-top: 30px; } }
+
+.btn-selected, .menu-main-menu-container a:hover, .servicios .btn-servicios a, .proyectos .btn-proyectos a, .single-portfolio .btn-proyectos a, .btn-ver-proyecto-link, .nosotros .btn-nosotros a, .contacto .btn-contacto a {
+  color: #fff;
+  background: #000; }
 
 header {
   top: 0;
@@ -95,17 +97,18 @@ header {
   @media (min-width: 768px) {
     .menu-main-menu-container li {
       display: inline-block;
-      margin-left: 50px; } }
+      margin-left: 30px; } }
+  .menu-main-menu-container li:first-child {
+    margin: 0; }
   .menu-main-menu-container a {
     color: #000;
     font-weight: 700;
     font-size: 16px;
     text-decoration: none;
     text-transform: uppercase;
-    line-height: 50px;
-    display: block; }
-    .menu-main-menu-container a:hover {
-      font-style: italic; }
+    line-height: 40px;
+    display: block;
+    padding: 0 10px; }
 
 footer {
   display: flex;
@@ -163,9 +166,6 @@ footer {
   .social-menu .email a {
     background-image: url("../images/icon-email.svg"); }
 
-.servicios .btn-servicios {
-  font-style: italic; }
-
 @media (min-width: 768px) {
   .servicios-boxes {
     display: flex;
@@ -188,9 +188,6 @@ footer {
     margin: 0 auto;
     max-width: 100%;
     height: auto; }
-
-.proyectos .btn-proyectos {
-  font-style: italic; }
 
 .st_sf_port_filter_holder {
   height: 40px;
@@ -260,8 +257,6 @@ footer {
     text-decoration: none; }
     .portfolio_link_button:hover .st_sf_vc_potrfolio {
       opacity: 0.5; }
-    .portfolio_link_button:hover .st_sf_vc_port_cat {
-      font-style: italic; }
 
 .hover_overlay {
   font-weight: 500;
@@ -292,9 +287,6 @@ footer {
 .page-template-portfolio.page-child h1 {
   margin: 50px auto 20px; }
 
-.single-portfolio .btn-proyectos {
-  font-style: italic; }
-
 .nextend-thumbnail-scroller {
   background: white !important;
   justify-content: space-evenly;
@@ -315,21 +307,36 @@ footer {
 .oi_portfolio_page_holder {
   padding: 20px 0; }
   @media (min-width: 768px) {
-    .oi_portfolio_page_holder p {
-      width: 75%; } }
-  .oi_portfolio_page_holder .n2-ss-align {
-    margin-top: 40px; }
-    .oi_portfolio_page_holder .n2-ss-align ~ P {
-      width: 100%; }
+    .oi_portfolio_page_holder {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between; } }
+  @media (min-width: 768px) {
+    .oi_portfolio_page_holder .description {
+      width: 200px;
+      font-size: 14px;
+      line-height: 18px; } }
+  @media (min-width: 768px) {
+    .oi_portfolio_page_holder .n2-ss-align {
+      width: 720px;
+      margin: 0 !important; } }
+  .oi_portfolio_page_holder .n2-ss-align ~ div {
+    display: none; }
+  .oi_portfolio_page_holder .n2-ss-align ~ p {
+    width: 100%; }
+  @media (min-width: 768px) {
+    .oi_portfolio_page_holder .n2-clear {
+      width: 0; } }
 
 .btn-ver-proyecto-link {
   float: right;
-  color: #4343fe;
+  padding: 10px;
   margin-top: 10px;
   text-transform: uppercase; }
+  .btn-ver-proyecto-link:hover {
+    text-decoration: none;
+    background-color: #404040; }
 
-.nosotros .btn-nosotros {
-  font-style: italic; }
 .nosotros .size-post-thumbnail {
   max-width: 100%;
   height: auto; }
@@ -379,8 +386,6 @@ footer {
   color: #fff;
   background: #404040; }
 
-.contacto .btn-contacto {
-  font-style: italic; }
 .contacto p {
   margin-left: 30px; }
   .contacto p:before {

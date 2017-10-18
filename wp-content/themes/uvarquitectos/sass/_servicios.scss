@@ -1,6 +1,6 @@
 .servicios {
-	.btn-servicios {
-		font-style: italic;
+	.btn-servicios a {
+		@extend .btn-selected;
 	}
 }
 

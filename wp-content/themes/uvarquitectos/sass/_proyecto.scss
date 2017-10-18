@@ -1,6 +1,6 @@
 .single-portfolio {
-	.btn-proyectos {
-		font-style: italic;
+	.btn-proyectos a {
+		@extend .btn-selected;
 	}
 }
 
@@ -27,25 +27,52 @@
 
 .oi_portfolio_page_holder {
 	padding: 20px 0;
+	@include breakpoint(desktop) {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;		
+	}
 
-	p {
+	.description {
 		@include breakpoint(desktop) {
-			width: 75%;
+			width: 200px;
+			font-size: 14px;
+			line-height: 18px;
 		}
 	}
 
 	.n2-ss-align {
-		margin-top: 40px;
 
-		~ P {
+		@include breakpoint(desktop) {
+			width: 720px;
+			margin: 0 !important;
+		}
+
+		~ div {
+			display: none;
+		}
+
+		~ p {
 			width: 100%;
+		}
+	}
+
+	.n2-clear {
+		@include breakpoint(desktop) {
+			width: 0;
 		}
 	}
 }
 
 .btn-ver-proyecto-link {
+	@extend .btn-selected;
 	float: right;
-	color: $blue;
+	padding: 10px;
 	margin-top: 10px;
 	text-transform: uppercase;
+
+	&:hover {
+		text-decoration: none;
+		background-color: $grey-dark;
+	}
 }
