@@ -15,7 +15,7 @@ body {
   line-height: normal; }
 
 h1 {
-  font-size: 18px;
+  font-size: 19px;
   font-weight: 700; }
 
 h2 {
@@ -44,7 +44,7 @@ a {
 
 .btn-selected, .menu-main-menu-container a:hover, .servicios .btn-servicios a, .servicios-boxes a, .proyectos .btn-proyectos a, .single-portfolio .btn-proyectos a, .btn-ver-proyecto-link, .nosotros .btn-nosotros a, .contacto .btn-contacto a {
   color: #fff;
-  background: #000; }
+  background: #0f0f0f; }
 
 header {
   top: 0;
@@ -55,7 +55,7 @@ header {
   padding: 15px 0 0;
   text-align: center;
   background: #fff;
-  border-bottom: 1px solid #000; }
+  border-bottom: 1px solid #0f0f0f; }
   @media (min-width: 768px) {
     header {
       padding: 0 0 25px;
@@ -79,7 +79,7 @@ header {
       margin-top: 5px; } }
 
 .mobile-menu {
-  color: #000;
+  color: #0f0f0f;
   font-weight: 700;
   font-size: 15px;
   padding-bottom: 10px; }
@@ -103,7 +103,7 @@ header {
   .menu-main-menu-container li:first-child {
     margin: 0; }
   .menu-main-menu-container a {
-    color: #000;
+    color: #0f0f0f;
     font-weight: 700;
     font-size: 15px;
     text-decoration: none;
@@ -118,7 +118,7 @@ footer {
   line-height: 23px;
   padding: 15px 0;
   margin-top: 30px;
-  border-top: 1px solid #000; }
+  border-top: 1px solid #0f0f0f; }
   footer > div {
     width: 50%; }
 
@@ -154,7 +154,7 @@ footer {
     border-radius: 100%;
     text-indent: 100px;
     overflow: hidden;
-    background: #000 no-repeat center;
+    background: #0f0f0f no-repeat center;
     background-size: 11px; }
   .social-menu .instagram a {
     background-image: url("../images/icon-instagram.svg"); }
@@ -170,7 +170,7 @@ footer {
 
 .servicios h2 {
   font-weight: 500;
-  font-size: 18px; }
+  font-size: 19px; }
 
 @media (min-width: 768px) {
   .servicios-boxes {
@@ -211,7 +211,7 @@ footer {
   padding: 15px;
   margin-top: 15px;
   position: relative;
-  background: #000; }
+  background: #0f0f0f; }
   .mas-servicios-text:before {
     content: '';
     width: 0;
@@ -221,7 +221,7 @@ footer {
     display: block;
     position: absolute;
     border: 10px solid transparent;
-    border-bottom-color: #000; }
+    border-bottom-color: #0f0f0f; }
 
 .st_sf_port_filter_holder {
   height: 40px;
@@ -301,7 +301,7 @@ footer {
   text-align: center; }
 
 #load_more_port_masorny_posts {
-  background: #404040;
+  background: #0f0f0f;
   color: #fff;
   margin: 20px auto; }
 
@@ -404,7 +404,7 @@ footer {
   .nosotros-img.nosotros-active {
     font-weight: 500; }
     .nosotros-img.nosotros-active:after {
-      border-bottom-color: #404040; }
+      border-bottom-color: #0f0f0f; }
   .nosotros-img.nosotros-active {
     font-weight: 500;
     filter: none; }
@@ -422,7 +422,7 @@ footer {
   display: none;
   padding: 15px;
   color: #fff;
-  background: #404040; }
+  background: #0f0f0f; }
 
 .contacto p {
   margin-left: 30px; }
