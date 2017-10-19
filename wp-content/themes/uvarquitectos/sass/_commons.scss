@@ -53,3 +53,14 @@ a {
 	color: $white;
 	background: $black;
 }
+
+.uva-logo,
+.social-menu {
+	a {
+		opacity: 1;
+		transition: opacity linear 0.2s;
+		&:hover {
+			opacity: 0.5;
+		}
+	}
+}
