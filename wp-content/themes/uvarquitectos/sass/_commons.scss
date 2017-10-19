@@ -4,20 +4,22 @@ html {
 
 body {
 	font-family: $font;
+	font-size: $txt-r;
+	line-height: normal;
 }
 
 h1 {
-	font-size: 18px;
+	font-size: $txt-ml;
 	font-weight: 700;
 }
 
 h2 {
-	font-size: 16px;
+	font-size: $txt-r*1.1;
 	margin-bottom: 3px;
 }
 
 h4 {
-	font-size: 12px;
+	font-size: $txt-s;
 }
 
 p {

@@ -27,6 +27,8 @@
 	padding: 30px 0;
 	position: relative;
 	cursor: pointer;
+	filter: grayscale(100%);
+	transition: filter linear 0.3s;
 
 	@include breakpoint(desktop) {
 		width: 23%;
@@ -42,7 +44,6 @@
 		border: 10px solid transparent;
 	}
 
-	&:hover,
 	&.nosotros-active {
 		font-weight: 500;
 
@@ -51,12 +52,9 @@
 		}
 	}
 
-	&:hover {
-		color: $grey-light;
-	}
-
 	&.nosotros-active {
 		font-weight: 500;
+		filter: none;
 	}
 
 	img {
@@ -64,6 +62,11 @@
 		margin: 0 auto;
 		max-width: 100%;
 		height: auto;
+	}
+
+	&:hover {
+		color: $grey-light;
+		filter: grayscale(0%);
 	}
 }
 

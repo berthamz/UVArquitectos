@@ -2,6 +2,11 @@
 	.btn-servicios a {
 		@extend .btn-selected;
 	}
+
+	h2 {
+		font-weight: 500;
+		font-size: $txt-ml;
+	}
 }
 
 .servicios-boxes {
@@ -28,6 +33,10 @@
 			margin: 0;
 		}
 
+		h2 {
+			text-align: center;
+		}
+
 		h2 ~ p {
 			margin: 15px 0;
 		}
@@ -38,5 +47,40 @@
 			max-width: 100%;
 			height: auto;
 		}
+	}
+
+	a {
+		@extend .btn-selected;
+		padding: 5px 10px;
+
+		&:hover {
+			text-decoration: none;
+			background-color: $grey-dark;
+		}
+	}
+}
+
+.mas-servicios-btn {
+	cursor: pointer;
+}
+
+.mas-servicios-text {
+	display: none;
+	color: $white;
+	padding: 15px;
+	margin-top: 15px;
+	position: relative;
+	background: $black;
+
+	&:before {
+		content: '';
+		width: 0;
+		height: 0;
+		top: -20px;
+		left: 40px;
+		display: block;
+		position: absolute;
+		border: 10px solid transparent;
+		border-bottom-color: $black;
 	}
 }

@@ -19,4 +19,9 @@ jQuery(document).ready(function() {
 		jQuery(this).next().fadeIn(200);
 	});
 
+	// Servicios display
+	jQuery('.mas-servicios-btn').click ( function () {
+		jQuery('.mas-servicios-text').fadeToggle(100);
+	});
+
 });
