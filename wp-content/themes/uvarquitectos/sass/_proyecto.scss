@@ -6,11 +6,19 @@
 
 .nextend-thumbnail-scroller {
 	background: white !important;
-	justify-content: space-evenly;
+	justify-content: space-around;
 	flex-direction: row !important;
+
+	@include breakpoint(desktop) {
+		justify-content: flex-start;
+	}
 
 	> .n2-ow {
 		margin: 10px 0 0 !important;
+
+		@include breakpoint(desktop) {
+			margin-right: 10px !important;
+		}
 	}
 }
 
@@ -21,7 +29,7 @@
 	width: calc(100vw - 20px) !important;
 
 	@include breakpoint(desktop) {
-		max-width: 950px !important;
+		max-width: 720px !important;
 	}
 }
 
@@ -30,7 +38,7 @@
 	@include breakpoint(desktop) {
 		display: flex;
 		flex-wrap: wrap;
-		justify-content: space-between;		
+		justify-content: space-between;
 	}
 
 	.description {

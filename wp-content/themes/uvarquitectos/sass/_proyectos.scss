@@ -17,7 +17,7 @@
 	background: $grey-lighter;
 
 	@include breakpoint(desktop) {
-		width: 200px;
+		width: 220px;
 		float: right;
 	}
 }
@@ -47,7 +47,7 @@
 	text-align: left;
 
 	@include breakpoint(desktop) {
-		width: 200px;
+		width: 220px;
 	}
 }
 
@@ -123,9 +123,9 @@
 	float: right;
 	padding: 10px;
 	font-size: 13px;
-	color: $grey-light;
+	color: $white;
+	background: $black;
 	text-transform: uppercase;
-	background: $grey-lighter;
 	margin-top: -30px;
 
 	&:hover {

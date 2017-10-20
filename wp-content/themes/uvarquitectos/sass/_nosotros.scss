@@ -17,7 +17,7 @@
 	@include breakpoint(desktop) {
 		display: flex;
 		flex-wrap: wrap;
-		justify-content: space-between;
+		justify-content: flex-start;
 
 	}
 }
@@ -31,7 +31,11 @@
 	transition: filter linear 0.3s;
 
 	@include breakpoint(desktop) {
-		width: 23%;
+		width: 23.5%;
+	}
+
+	&:not(:nth-of-type(7)) {
+		margin-right: 2%;
 	}
 
 	&:after {
@@ -76,4 +80,10 @@
 	padding: 15px;
 	color: $white;
 	background: $black;
+
+	strong {
+		font-weight: 500;
+		font-size: 16px;
+		margin-bottom: 5px;
+	}
 }
