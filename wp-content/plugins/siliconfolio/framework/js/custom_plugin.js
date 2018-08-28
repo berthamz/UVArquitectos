@@ -99,7 +99,7 @@ jQuery.noConflict()(function($){
 						if ( parseInt($('#st_sf_max_masorny_posts').html()) == $('.st_sf_strange_portfolio_item').length ){
 							$('#load_more_port_masorny_posts').html('<span style="">NO HAY MÁS PROYECTOS</span>');
 							$('#load_more_port_masorny_posts').addClass('disabled');
-							  	var quotes = new Array('Stop','Do not Click','Nothing Here','Hey?','What?','Are you Crazy?', 'OMG', 'Unbelievable','Get Lost!'),
+							  	var quotes = new Array('No hay más proyectos'),
 								randno = quotes[Math.floor( Math.random() * quotes.length )];
 
 							$('.st_sf_load_more.disabled').click(function(e){$('#load_more_port_masorny_posts:not(disabled)').html('<span style="">'+randno+'</span>');})

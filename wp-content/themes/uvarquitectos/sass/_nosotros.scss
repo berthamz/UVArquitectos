@@ -17,7 +17,7 @@
 	@include breakpoint(desktop) {
 		display: flex;
 		flex-wrap: wrap;
-		justify-content: flex-start;
+		justify-content: space-between;
 
 	}
 }
@@ -31,11 +31,7 @@
 	transition: filter linear 0.3s;
 
 	@include breakpoint(desktop) {
-		width: 23.5%;
-	}
-
-	&:not(:nth-of-type(7)) {
-		margin-right: 2%;
+		width: 19%;
 	}
 
 	&:after {

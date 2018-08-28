@@ -93,10 +93,6 @@
 
 	&:hover {
 		text-decoration: none;
-
-		.st_sf_vc_potrfolio {
-			opacity: 0.5;
-		}
 	}
 }
 
@@ -104,6 +100,11 @@
 	font-weight: 500;
 	line-height: 18px;
 	padding: 5px 0;
+	color: $black;
+
+	.st_sf_vc_sep {
+		display: none;
+	}
 }
 
 .st_sf_load_more_holder {
@@ -114,6 +115,18 @@
 	background: $black;
 	color: $white;
 	margin: 20px auto;
+}
+
+.st_sf_port_style_ii .st_sf_vc_port_mask {
+	bottom: auto !important;
+	top: 0 !important;
+	height: 100%;
+	width: 100%;
+	background: $white !important;
+}
+
+.st_sf_port_style_ii:hover .st_sf_vc_port_mask {
+	opacity: 0.5;
 }
 
 

@@ -76,22 +76,24 @@ $p_tag = get_term_by('name', $e_tag, 'portfolio-tags');
                 $result['new_posts'] .='<div class="st_sf_vc_port_mask"  style="background:'.get_post_meta($post->ID, 'port-bg', true).'">';
                     $result['new_posts'] .='<div class="text-center">';
 						$result['new_posts'] .='<i class="fa fa-eye" style="color:'.get_post_meta($post->ID, 'port-text-color', true).'"></i>';
+					$result['new_posts'] .='</div>';
+                $result['new_posts'] .='</div>';
+                $result['new_posts'] .='</a>';
+            $result['new_posts'] .='</div>';
+
 						$result['new_posts'] .='<div class="hover_overlay">';
 							$result['new_posts'] .= '<h3 class="st_sf_sub_legend" style="color:'.get_post_meta($post->ID, 'port-text-color', true).'">'.get_the_title($post->ID).'</h3>';
 							$result['new_posts'] .= '<div class="st_sf_vc_sep" style="background:'.get_post_meta($post->ID, 'port-text-color', true).'"></div>';
 							$result['new_posts'] .= '<div class="st_sf_vc_port_cat" style="color:'.get_post_meta($post->ID, 'port-text-color', true).'">'.substr($slug, '0', '-2').'</div>';
                     	$result['new_posts'] .='</div>';
-					$result['new_posts'] .='</div>';
-                $result['new_posts'] .='</div>';
-                $result['new_posts'] .='</a>';
-            $result['new_posts'] .='</div>';
+
         $result['new_posts'] .='</div>';
 
 
 		}
 	}
 $result['count_new_posts'] = $_GET['st_sf_post_count'] + $_GET['st_sf_load_post_count'];
-$result['loading'] = __("Load More", "orangeidea");
+$result['loading'] = __("Ver Más", "orangeidea");
 $result['all_loaded'] = __("", "orangeidea");
 
 wp_reset_postdata();

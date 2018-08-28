@@ -686,7 +686,7 @@ div#n2-ss-2 .n2-ss-background-animation .tile {
   outline: 1px solid rgba(0,0,0,0);
 }
 div#n2-ss-2 {
-  width: 720px;
+  width: 800px;
   height: 520px;
   float: left;
 }
@@ -739,7 +739,7 @@ div#n2-ss-2 .n2-ss-slide {
   position: absolute;
   top: 0;
   left: 0;
-  width: 720px;
+  width: 800px;
   height: 520px;
   z-index: 2;
   display: block;
@@ -747,7 +747,7 @@ div#n2-ss-2 .n2-ss-slide {
 }
 div#n2-ss-2 .n2-ss-layers-container {
   position: relative;
-  width: 720px;
+  width: 800px;
   height: 520px;
 }
 div#n2-ss-2 .n2-ss-slide-active {

@@ -29,7 +29,7 @@
 	width: calc(100vw - 20px) !important;
 
 	@include breakpoint(desktop) {
-		max-width: 720px !important;
+		max-width: 800px !important;
 	}
 }
 
@@ -43,7 +43,7 @@
 
 	.description {
 		@include breakpoint(desktop) {
-			width: 200px;
+			width: 240px;
 			font-size: 14px;
 			line-height: 18px;
 		}
@@ -52,7 +52,7 @@
 	.n2-ss-align {
 
 		@include breakpoint(desktop) {
-			width: 720px;
+			width: 800px;
 			margin: 0 !important;
 		}
 
@@ -83,4 +83,8 @@
 		text-decoration: none;
 		background-color: $grey-dark;
 	}
+}
+
+.nextend-thumbnail-button {
+	opacity: 0 !important;
 }

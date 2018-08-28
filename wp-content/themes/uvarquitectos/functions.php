@@ -140,6 +140,18 @@ function add_page_bodyclass($classes) {
     }
 }
 
+/**
+ * Remove Tagline from title tag
+ */
+
+function remove_tagline($title) {
+    if(isset($title['tagline'])) {
+        unset($title['tagline']);
+    }
+    return $title;
+}
+
+
 
 // Load stylesheets
 function uva_styles() {
@@ -158,3 +170,4 @@ add_action( 'template_redirect', 'redirect_to_specific_page' );
 // Add Filters
 add_filter('show_admin_bar', '__return_false');
 add_filter('body_class','add_page_bodyclass');
+add_filter('document_title_parts', 'remove_tagline');

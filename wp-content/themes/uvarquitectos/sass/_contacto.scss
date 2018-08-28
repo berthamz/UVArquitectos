@@ -32,12 +32,17 @@
 		}
 	}
 
+	a {
+		color: $black;
+	}
+
 	#wpgmza_map {
 		margin-top: 40px;
 		height: 300px !important;
 
 		@include breakpoint(desktop) {
-			height: 550px !important;
+			height: calc(100vh - 400px) !important;
+			max-height: 550px !important;
 		}
 	}
 }

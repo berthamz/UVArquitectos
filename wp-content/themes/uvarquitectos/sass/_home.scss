@@ -1,0 +1,30 @@
+.home {
+	.n2-ss-align.n2-ss-slider-align-visible {
+		max-width: 1100px !important;
+	}
+
+	.n2-ss-slider-1.n2-ow,
+	.n2-ss-slider.n2-ow,
+	.n2-ss-slide {
+		max-height: 730px;
+		height: calc(100vh - 240px) !important;
+
+		@include breakpoint(desktop) {
+			width: calc(100vh + 200px) !important;
+			max-width: 100%;
+		}
+	}
+
+	.nextend-arrow {
+		top: 50% !important;
+	}
+
+	.n2-ss-background-image {
+		background-size: cover;
+	}
+
+	.n2-ss-slider.n2-ow {
+		float: none !important;
+		margin: 0 auto !important;
+	}
+}

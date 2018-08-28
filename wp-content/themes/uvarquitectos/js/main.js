@@ -7,7 +7,7 @@ jQuery(document).ready(function() {
 		} else {}
 	});
 
-	jQuery('.filter-dropdown-menu').click( function(){
+	jQuery('.filter-dropdown-menu, .st_sf_list_cats a').click( function(){
 		jQuery('.st_sf_list_cats').fadeToggle(100);
 	});
 
